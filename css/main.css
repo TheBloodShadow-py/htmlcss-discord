@@ -316,6 +316,7 @@ footer {
 .lang-picker {
   gap: 10px;
   cursor: pointer;
+  align-items: center;
 }
 
 .socials {
