@@ -14,6 +14,8 @@
   --main-text-color: #24282b;
   --header-color: #255ee9;
   --brand-color: #255ee9;
+  --footer-bg-color: #23272a;
+  --foter-text-color: #8ea1e1;
 }
 
 ul,
@@ -57,6 +59,14 @@ header p,
 header li,
 header a {
   color: var(--header-text-color);
+}
+
+footer p,
+footer li,
+footer span,
+footer strong,
+footer svg {
+  color: white;
 }
 
 .container {
@@ -124,6 +134,10 @@ a {
 
 .padding-100 {
   padding: 100px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--foter-text-color);
 }
 
 /* HERO SECTION */
@@ -206,7 +220,7 @@ a {
 }
 
 .wide-content img:not(.wide-content .wide-download-btn img) {
-  height: calc(350px + 12vw);
+  height: calc(350px + 10vw);
   width: auto;
 }
 
@@ -236,7 +250,7 @@ a {
 
 .wide-download-btn {
   padding: 13px 25px;
-  background-color: #8ea1e1;
+  background-color: var(--foter-text-color);
   gap: 10px;
 }
 
@@ -251,4 +265,83 @@ a {
 }
 .wide-download-btn svg {
   color: white;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--footer-bg-color);
+  padding: 80px;
+  padding-bottom: 70px;
+}
+
+.footer-main-section {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex-direction: column;
+  font-size: 16px;
+  gap: 8px;
+}
+
+.footer-section strong {
+  color: var(--foter-text-color);
+}
+
+.footer-section ul[class="flex"] {
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 35px;
+}
+
+.lang-section {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lang-section strong {
+  color: var(--foter-text-color);
+  max-width: 250px;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.lang-picker img {
+  width: 25px;
+  height: auto;
+}
+
+.lang-picker {
+  gap: 10px;
+  cursor: pointer;
+}
+
+.socials {
+  gap: 18px;
+}
+
+.socials svg {
+  cursor: pointer;
+}
+
+.bottom-footer {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.register-btn {
+  padding: 10px 15px;
+  background-color: var(--foter-text-color);
+}
+
+.register-btn a {
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: var(--brand-color);
+  transition: all 250ms;
 }
