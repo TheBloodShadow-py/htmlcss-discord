@@ -1,6 +1,6 @@
 /* GENERAL SETTINGS AND UTILITIS */
 
-@import url("https://fonts.googleapis.com/css2?family=Doppio+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,800&display=swap");
 
 * {
   margin: 0;
@@ -10,7 +10,8 @@
 
 :root {
   --main-text-color: white;
-  --header-color: #3161e0;
+  --header-color: #255ee9;
+  --brand-color: #255ee9;
 }
 
 ul,
@@ -32,7 +33,8 @@ li,
 a {
   line-height: 1.5;
   color: var(--main-text-color);
-  font-family: "Doppio One", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
 }
 
 .container {
@@ -43,14 +45,12 @@ a {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .btn {
   background-color: white;
   border: none;
-  padding: 2px 12px;
-  border-radius: 15px;
+  border-radius: 35px;
   color: black;
 }
 
@@ -68,15 +68,16 @@ a {
 
 .main-header {
   justify-content: space-between;
-  padding: 1.25rem;
+  align-items: center;
+  padding: 1rem;
 }
 
 .navbar {
   gap: 30px;
 }
 
-.navbar li {
-  margin-top: 4px;
+.login-btn {
+  padding: 8px 12px;
 }
 
 .login-btn a {
@@ -85,4 +86,53 @@ a {
 
 .logo {
   cursor: pointer;
+}
+
+.gap-15 {
+  gap: 30px;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background: url("/img/jumbo.png") center no-repeat;
+  background-size: cover;
+  padding: 90px 60px;
+}
+
+.hero-container {
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-container p {
+  max-width: 650px;
+}
+
+.hero-container h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.download-btn {
+  padding: 13px 25px;
+  align-items: center;
+  gap: 10px;
+}
+
+.download-btn a {
+  color: black;
+  font-size: 1rem;
+}
+
+.browser-btn {
+  padding: 13px 25px;
+  background-color: #23272a;
+}
+
+.browser-btn a {
+  font-size: 1rem;
 }
