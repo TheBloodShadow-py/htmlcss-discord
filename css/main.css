@@ -9,7 +9,9 @@
 }
 
 :root {
-  --main-text-color: white;
+  --header-text-color: white;
+  --hero-text-color: white;
+  --main-text-color: #24282b;
   --header-color: #255ee9;
   --brand-color: #255ee9;
 }
@@ -35,6 +37,26 @@ a {
   color: var(--main-text-color);
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
+}
+
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section strong,
+.hero-section p,
+.hero-section li,
+.hero-section a {
+  color: var(--hero-text-color);
+}
+
+header h1,
+header h2,
+header h3,
+header strong,
+header p,
+header li,
+header a {
+  color: var(--header-text-color);
 }
 
 .container {
@@ -92,6 +114,18 @@ a {
   gap: 30px;
 }
 
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.bg-lightgray {
+  background-color: #f6f6f6;
+}
+
+.padding-100 {
+  padding: 100px;
+}
+
 /* HERO SECTION */
 
 .hero-section {
@@ -112,7 +146,7 @@ a {
 }
 
 .hero-container h1 {
-  font-size: 60px;
+  font-size: 55px;
   line-height: 1.2;
   font-weight: 600;
 }
@@ -135,4 +169,86 @@ a {
 
 .browser-btn a {
   font-size: 1rem;
+}
+
+/* SECTIONS */
+
+.featured-section {
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 5rem;
+}
+
+.featured-section img {
+  height: calc(150px + 12vw);
+  width: auto;
+}
+
+.text-section {
+  flex-direction: column;
+  min-width: 230px;
+  max-width: 300px;
+  gap: 20px;
+}
+
+.text-section h2 {
+  line-height: 1.2;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.wide-section {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.wide-content img:not(.wide-content .wide-download-btn img) {
+  height: calc(350px + 12vw);
+  width: auto;
+}
+
+.wide-content h2 {
+  line-height: 1.2;
+  font-weight: 800;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.wide-content strong {
+  line-height: 1.2;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.wide-content strong::before {
+  content: "";
+  display: table;
+  height: 45px;
+  width: 100%;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("/img/stars.svg");
+}
+
+.wide-download-btn {
+  padding: 13px 25px;
+  background-color: #8ea1e1;
+  gap: 10px;
+}
+
+.wide-download-btn:hover {
+  background-color: var(--brand-color);
+  transition: all 250ms;
+}
+
+.wide-download-btn a {
+  color: white;
+  font-size: 1rem;
+}
+.wide-download-btn svg {
+  color: white;
 }
